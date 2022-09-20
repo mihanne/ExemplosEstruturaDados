@@ -14,7 +14,8 @@ public class Exemplo2Pilha {
         while (scanner.hasNextLine()){
             pilha.push(scanner.nextLine());
         }
-       System.out.println("Pilha de Nomes");
+        System.out.println("Tamanho da Pilha " + pilha.size());
+       System.out.println("****Pilha de Nomes*****");
         while(!pilha.empty())
 		   {
 		        System.out.println(pilha.pop());

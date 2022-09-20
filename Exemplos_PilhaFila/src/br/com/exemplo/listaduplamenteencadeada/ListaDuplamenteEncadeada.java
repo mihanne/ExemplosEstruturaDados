@@ -30,7 +30,8 @@ public class ListaDuplamenteEncadeada <T>{
         ultimoNo = novoNo;
         tamanhoLista++;
     }
-
+    
+    //adiciona em uma posição da Lista
     public void addB(int index, T elemento){
         NoDuplo<T> noAuxiliar = getNo(index);
         NoDuplo<T> novoNo = new NoDuplo<>(elemento);
@@ -52,6 +53,7 @@ public class ListaDuplamenteEncadeada <T>{
         tamanhoLista++;
     }
 
+    //remove da lista duplamente encadeada
     public void remove(int index){
         if(index == 0){
             primeiroNo = primeiroNo.getNoProximo();
@@ -70,6 +72,7 @@ public class ListaDuplamenteEncadeada <T>{
         this.tamanhoLista--;
     }
 
+    //retorna o objeto referente ao nó
     private NoDuplo<T> getNo(int index){
         NoDuplo<T> noAuxiliar = primeiroNo;
         for(int i=0; (i < index) && (noAuxiliar != null); i++){
