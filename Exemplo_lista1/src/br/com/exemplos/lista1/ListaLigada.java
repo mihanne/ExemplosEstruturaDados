@@ -3,6 +3,7 @@ package br.com.exemplos.lista1;
 import java.io.IOException;
 
 public class ListaLigada {
+	
 private No primeiro, ultimo;
 
 	 public ListaLigada () {
@@ -121,7 +122,7 @@ private No primeiro, ultimo;
  int i = 1;
  No noTemp = primeiro;
  while (noTemp != null){
-	 System.out.println("Elemento "+ noTemp.elemento+ " posição "+i);
+	 System.out.println("Elemento "+ noTemp.elemento+ " posiï¿½ï¿½o "+i);
 	 noTemp = noTemp.prox;
 	 i++;
  }

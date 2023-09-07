@@ -12,6 +12,7 @@ public float getDado() {
 public void setDado(float dado) {
 	this.dado=dado;
 }
+
 public Nodo getProximo() {
 	return proximo;
 }
